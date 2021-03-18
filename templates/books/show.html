@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    <p>{{ selected_book.description}}</p>
+    <hr>
+    <p> {{ selected_book.year }} </p>
+    <p> {{ selected_book.author.name }} </p>
+    <p> {{ selected_book.purchased }}</p>
+    <p><a href="/books/{{selected_book.id}}/edit">Edit</a></p>
+    </ul>
+{% endblock %}
